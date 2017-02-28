@@ -1,0 +1,16 @@
+p{
+	color: darkblue
+}
+body{
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 2em
+}
+input{
+	margin: 1em;
+	display: block;
+}
+form{
+	padding: 1em;
+	background-color: #CCC
+}
