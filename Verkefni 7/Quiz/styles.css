@@ -1,0 +1,53 @@
+p{
+	color: darkblue
+}
+html{
+	height: 100%;
+}
+body{
+	max-width: 40em;
+	margin: 0 auto;
+	height: 100%;
+}
+body div{
+	text-align: center;
+	height: 100%;
+	padding: 2em;
+	background-color: #AAA
+}
+input{
+	margin: 1em;
+	display: block;
+}
+form{
+	padding: 1em;
+	background-color: #CCC
+}
+
+ input[type=radio],
+ input[type=checkbox] {
+   display: none;
+ }
+ form input[type="radio"]:checked + label {
+   background-color: #BBB;
+ }
+ label {
+   display: block;
+   appearance: button;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   background: #DDD;
+   font-size: 1.6rem;
+   color: #111111;
+   border: 2px solid #AAAAAA;
+   padding: 0.25em;
+   width: 40%;
+   margin: 0.5em auto;
+   text-align: center;
+}
+
+input[type=number],
+input[type=text]{
+	font-size: 1.6rem;
+	margin: 0.5em auto;
+}
