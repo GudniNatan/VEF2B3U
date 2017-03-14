@@ -39,13 +39,12 @@ function shuffleArray(array) {
 
 async function submit(event) {	//Function is async so I can retrigger the animation. If you are using firefox, you should update to the latest version or this will break.
 	event.preventDefault();
-	// look at data
-	console.log(form.elements["in"].value);
-	console.log(questions[questionNumber].answer);
+	//Remove classes and wait for 25ms, so that the animation will be properly triggered
 	form.classList.remove("correctAnswer", "wrongAnswer");
 	await sleep(25);
 
-	if (String(form.elements["in"].value).toLowerCase() == String(questions[questionNumber].answer).toLowerCase())
+	//Check answer
+	if (String(form.elements["ans"].value).toLowerCase() == String(questions[questionNumber].answer).toLowerCase())
 	{
 		var scoreText = document.getElementById('score');
 		scoreText.textContent = ++score;
@@ -56,6 +55,7 @@ async function submit(event) {	//Function is async so I can retrigger the animat
 		form.classList.add("wrongAnswer");
 	}
 
+	//Set up next question or end the game if all questions have been answered
 	if (questionNumber < questions.length - 1)
 	{
 		setQuestion(questions[++questionNumber]);
@@ -94,7 +94,7 @@ function setQuestion(question){
 			var text = question.options[i];
 
 			radiobutton.type = "radio";
-			radiobutton.name = "in";
+			radiobutton.name = "ans";
   			radiobutton.value = text;
   			radiobutton.id = text;
 
@@ -111,7 +111,7 @@ function setQuestion(question){
 
 		input.type = question.type;
 		input.id = "answers";
-		input.name = "in";
+		input.name = "ans";
 
 		form.appendChild(input);
 	}
