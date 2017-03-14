@@ -74,11 +74,11 @@ input[type=text]{
 .correctAnswer{
 	animation-name: correctAnswerFlash;
     animation-duration: 1s;
+    animation-timing-function: ease-in-out
 }
 
 .wrongAnswer{
 	animation-name: wrongAnswerFlash;
     animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-
+    animation-timing-function: ease-in-out
 }
