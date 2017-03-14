@@ -1,0 +1,84 @@
+p{
+	color: darkblue
+}
+html{
+	height: 100%;
+}
+body{
+	max-width: 40em;
+	margin: 0 auto;
+	height: 100%;
+}
+body main{
+	text-align: center;
+	height: 100%;
+	padding: 2em;
+	background-color: #AAA
+}
+div{
+	width: 100%;
+	text-align: left;
+}
+input{
+	margin: 1em;
+	display: block;
+}
+form{
+	padding: 1em;
+	background-color: #CCC
+}
+
+input[type=radio],
+input[type=checkbox] {
+  	display: none;
+}
+form input[type="radio"]:checked + label{
+  	background-color: #BBB;
+}
+label {
+  	display: block;
+  	appearance: button;
+  	font-family: 'Roboto', sans-serif;
+  	font-weight: 400;
+  	background: #DDD;
+  	font-size: 1.6rem;
+  	color: #111111;
+  	border: 2px solid #AAAAAA;
+   	padding: 0.25em;
+   	width: 40%;
+   	margin: 0.5em auto;
+   	text-align: center;
+}
+input[type=number],
+input[type=text]{
+	font-size: 1.6rem;
+	margin: 0.5em auto;
+}
+
+.selected, .selected + label{
+	background: red;
+}
+
+@keyframes correctAnswerFlash {
+    0% {background-color: #CCC;}
+    20% {background-color: lime;}
+    100% {background-color: #CCC;}
+}
+
+@keyframes wrongAnswerFlash {
+    0% {background-color: #CCC;}
+    20% {background-color: red;}
+    100% {background-color: #CCC;}
+}
+
+.correctAnswer{
+	animation-name: correctAnswerFlash;
+    animation-duration: 1s;
+}
+
+.wrongAnswer{
+	animation-name: wrongAnswerFlash;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}

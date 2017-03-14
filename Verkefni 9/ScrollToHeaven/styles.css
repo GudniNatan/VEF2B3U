@@ -1,0 +1,24 @@
+html{
+	height: 101%
+}
+
+body{
+	height: 100%
+}
+
+p{
+	color: darkblue
+}
+main{
+	padding: 2em;
+	margin: 4em;
+	position: absolute;
+	bottom: 0;
+	background-color: #CCC;
+	outline: #999 solid thick
+}
+
+#background{
+	height: 101%;
+	background-color: lime
+}
