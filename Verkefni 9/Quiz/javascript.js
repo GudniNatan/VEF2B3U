@@ -16,7 +16,7 @@ function Question(text, type, answer, options=undefined) {	//Smiður fyrir spurn
 	this.text = text;
 	this.type = type;
 	this.answer = answer;
-	this.options = options
+	this.options = options;
 }
 
 function sleep(ms) {
