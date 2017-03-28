@@ -1,0 +1,51 @@
+*{
+	box-sizing: border-box;
+}
+p{
+	color: #1c23ff;
+}
+html{
+	height: 100%;
+}
+body{
+	max-width: 40em;
+	margin: 0 auto;
+	height: 100%;
+}
+body main{
+	text-align: center;
+	min-height: 100%;
+	padding: 2em;
+	background-color: #AAA
+}
+h3{
+	text-transform:capitalize;
+}
+div{
+	max-height: 100%;
+}
+#accordion{
+	text-align: left;
+}
+#accordion table{
+	min-width: 100%;
+}
+#accordion table tr{
+	margin: 1em;
+}
+#accordion table tr{
+	margin: 1em;
+}
+#accordion table tr:nth-child(odd){
+	background-color: #EEE;
+}
+#accordion h3{
+	user-select: none;
+	text-align: center;
+}
+.searchDiv{
+	margin: 3em;
+}
+.ui-accordion .ui-accordion-content{
+	padding: 0;
+}
