@@ -1,8 +1,4 @@
 (function(){
-	function sleep(ms) {
-		return new Promise(resolve => setTimeout(resolve, ms));
-	}
-
 	let schedule = [];
 
 	let search_box = document.getElementById("search");
@@ -116,7 +112,7 @@
 			for (let j = 0; j < schedule[i][1].length; j++) {
 				let title = schedule[i][1][j].title;
 				let originalTitle = schedule[i][1][j].originalTitle;
-				if (title.search(RegExp(search_string, 'i')) > -1)
+				if (title.search(RegExp(search_string, 'i')) > -1) //Might break if user inputs illegal regex strings
 				{
 					/*console.log(schedule[i][1][j].title);
 					console.log(title.search(RegExp(search_string, 'i')));*/
