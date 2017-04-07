@@ -1,0 +1,14 @@
+04/04/2017
+Hóf vinnu á lokaverkefni VEF2B3U. Ég setti upp API sem sækir alla tónleika,
+	Og sýni þá á vefsíðuni. Einföld leit er líka komin inn.
+	Ég las mér til um MomentJs og hóf vinnu við að láta það inn.
+
+07/04/2017
+Sorteri nú tónleika eftir dagsetningu og set þá inn. Moment komið inn.
+	Sýni allar upplýsingar með mynd á síðu. Hægt er að flokka tónleika
+	eftir staðsetningu og leita síðan í þeim flokkum. 
+	Nota CSS til þess að gera síðuna aðeins minna ljóta.
+	Nota flexbox svo síðan virki með öllum skjástærðum og tækjum.
+	Bætti við footer sem sýnir dynamic ár.
+	Stór meirihluti af verkefninu er nú tilbúinn.
+	

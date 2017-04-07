@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Tillana');
+
+*{
+	box-sizing: border-box;
+}
+.searchDiv p{
+	color: #1c23ff;
+}
+html{
+	height: 100%;
+}
+body{
+	max-width: 80em;
+	margin: 0 auto;
+	height: 100%;
+}
+body main{
+	text-align: center;
+	min-height: 100%;
+	padding: 0 2;
+	padding-bottom: 4em;
+	background-color: #AAA
+}
+header{
+	width: 100%;
+	background-color: #999;
+	padding: 1em;
+}
+h3{
+	text-transform:capitalize;
+}
+div{
+	max-height: 100%;
+}
+#accordion{
+	text-align: left;
+}
+#accordion table{
+	min-width: 100%;
+}
+#accordion table tr{
+	margin: 1em;
+}
+#accordion table tr{
+	margin: 1em;
+}
+#accordion table tr:nth-child(odd){
+	background-color: #EEE;
+}
+#accordion h3{
+	user-select: none;
+	text-align: center;
+}
+#tools{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.searchDiv{
+	margin: 3em;
+}
+.ui-accordion .ui-accordion-content{
+	padding: 0;
+}
+.imageContainer{
+	max-width: 22em;
+	display: inline-flex;
+	margin: 1em;
+}
+.imageContainer figure{
+	margin: 0 auto;
+	max-width: 20em;
+}
+figure img, figure figcaption{
+	width: 20em;
+}
+h1{
+	font-size: 4em;
+	font-family: 'Segoe Print', 'Tillana', cursive;
+}
+footer{
+	position: fixed;
+	bottom: 0;
+	background-color: rgba(220, 220, 220, 0.9);
+	width: 100%;
+	max-width: 80em;
+	padding: 1em;
+	max-height: 4em;
+	overflow: hidden;
+	text-align: center;
+}
+figcaption{
+	position: relative;
+	top: -0.25em;
+	background-color: rgb(220, 220, 220);
+	margin: 0;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+figcaption p{
+	margin: 0;
+	padding: 0.2em;
+}
